@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [       
+        {
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceRoot}/build/default/BLINKY.elf",
+            "name": "JTAG DEBUGGING ",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "stlink",
+            "armToolchainPath": "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/11.2 2022.02/bin",
+            "interface": "swd",
+            //"svdFile": "${workspaceRoot}\\Desktop\\DaisyExamples\\seed\\stm32H750x.svd",
+            "runToEntryPoint": "true",
+            "showDevDebugOutput": "raw",
+          
+       }
+    ]
+}
