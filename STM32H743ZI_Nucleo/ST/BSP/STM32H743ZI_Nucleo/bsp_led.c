@@ -45,7 +45,7 @@
 *                                               DEFINES
 *********************************************************************************************************
 */
-
+#if 0
 #define  USER_LD1_GPIOB_PIN             DEF_BIT_00
 #define  USER_LD2_GPIOB_PIN             DEF_BIT_07
 #define  USER_LD3_GPIOB_PIN             DEF_BIT_14
@@ -54,8 +54,17 @@
                                         USER_LD3_GPIOB_PIN)
 
 #define  USER_LED_GPIO_PORT             GPIOB
+#endif
+#define  USER_LD1_GPIOB_PIN             GPIO_PIN_0
+#define  USER_LD2_GPIOB_PIN             GPIO_PIN_1
+#define  USER_LD3_GPIOB_PIN             GPIO_PIN_14
+#define  USER_LED_ALL_GPIOB_PIN        (USER_LD1_GPIOB_PIN  |  \
+                                        USER_LD2_GPIOB_PIN  |  \
+                                        USER_LD3_GPIOB_PIN)
 
-
+#define  USER_LD1_GPIO_PORT             GPIOB
+#define  USER_LD2_GPIO_PORT             GPIOE
+#define  USER_LD3_GPIO_PORT             GPIOB
 /*
 *********************************************************************************************************
 *                                      LOCAL FUNCTION PROTOTYPES
@@ -87,20 +96,43 @@
 
 void  BSP_LED_Init (void)
 {
-    GPIO_InitTypeDef  gpio_init;
+    GPIO_InitTypeDef  GPIO_InitStruct;
 
 
     __HAL_RCC_GPIOB_CLK_ENABLE();                               /* Enable GPIO clock for USER LEDs                      */
 
                                                                 /* ----------- CONFIGURE GPIOB FOR USER LEDS ---------- */
+#if 0    
     gpio_init.Pin   = USER_LD1_GPIOB_PIN  |
                       USER_LD2_GPIOB_PIN  |
                       USER_LD3_GPIOB_PIN;
     gpio_init.Mode  = GPIO_MODE_OUTPUT_PP;
     gpio_init.Pull  = GPIO_NOPULL;
     gpio_init.Speed = GPIO_SPEED_FREQ_HIGH;
+    
+    HAL_GPIO_Init(USER_LD1_GPIO_PORT, &GPIO_InitStruct);
+#else
+    GPIO_InitStruct.Pin = GPIO_PIN_0;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
 
-    HAL_GPIO_Init(USER_LED_GPIO_PORT, &gpio_init);
+    HAL_GPIO_Init(USER_LD1_GPIO_PORT, &GPIO_InitStruct);
+    
+    GPIO_InitStruct.Pin = GPIO_PIN_1;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+
+    HAL_GPIO_Init(USER_LD2_GPIO_PORT, &GPIO_InitStruct);
+    
+    GPIO_InitStruct.Pin = GPIO_PIN_14;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+
+    HAL_GPIO_Init(USER_LD3_GPIO_PORT, &GPIO_InitStruct);
+#endif
 }
 
 
@@ -120,6 +152,7 @@ void  BSP_LED_Init (void)
 
 void  BSP_LED_On (BSP_LED  led)
 {
+#if 0
     switch (led) {
         case USER_LED_ALL:
              HAL_GPIO_WritePin(USER_LED_GPIO_PORT, USER_LED_ALL_GPIOB_PIN, GPIO_PIN_SET);
@@ -144,6 +177,7 @@ void  BSP_LED_On (BSP_LED  led)
         default:
              break;
     }
+#endif
 }
 
 
@@ -163,6 +197,7 @@ void  BSP_LED_On (BSP_LED  led)
 
 void  BSP_LED_Off (BSP_LED  led)
 {
+#if 0
     switch (led) {
         case USER_LED_ALL:
              HAL_GPIO_WritePin(USER_LED_GPIO_PORT, USER_LED_ALL_GPIOB_PIN, GPIO_PIN_RESET);
@@ -187,6 +222,7 @@ void  BSP_LED_Off (BSP_LED  led)
         default:
              break;
     }
+#endif
 }
 
 
@@ -206,6 +242,7 @@ void  BSP_LED_Off (BSP_LED  led)
 
 void  BSP_LED_Toggle (BSP_LED  led)
 {
+#if 0
     switch (led) {
         case USER_LED_ALL:
              HAL_GPIO_TogglePin(USER_LED_GPIO_PORT, USER_LED_ALL_GPIOB_PIN);
@@ -230,4 +267,5 @@ void  BSP_LED_Toggle (BSP_LED  led)
         default:
              break;
     }
+#endif
 }

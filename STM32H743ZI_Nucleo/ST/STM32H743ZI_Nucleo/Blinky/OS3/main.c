@@ -173,7 +173,10 @@ static  void  StartupTask (void *p_arg)
 #endif
 
     while (DEF_TRUE) {                                          /* Task body, always written as an infinite loop.       */
-        BSP_LED_Toggle(USER_LD2);
+        //BSP_LED_Toggle(USER_LD2);
+        HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
+        HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_1);
+        HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_14);
         OSTimeDlyHMSM(0u, 0u, 1u, 0u,
                       OS_OPT_TIME_HMSM_STRICT,
                       &os_err);
