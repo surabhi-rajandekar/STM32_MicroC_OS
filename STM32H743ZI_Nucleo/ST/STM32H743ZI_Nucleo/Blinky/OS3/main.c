@@ -46,7 +46,6 @@
 #include  "os_app_hooks.h"
 #include  "../app_cfg.h"
 
-
 /*
 *********************************************************************************************************
 *                                            LOCAL DEFINES
@@ -62,7 +61,15 @@
 
 static  OS_TCB   StartupTaskTCB;
 static  CPU_STK  StartupTaskStk[APP_CFG_STARTUP_TASK_STK_SIZE];
-
+/* Creating a task stack & TCB */
+static OS_TCB TaskATCB;
+static CPU_STK TaskAStk[APP_CFG_DEFAULT_TASK_STK_SIZE];
+static OS_TCB TaskBTCB;
+static CPU_STK TaskBStk[APP_CFG_DEFAULT_TASK_STK_SIZE];
+static OS_MUTEX ArrayMutex;
+static OS_SEM ArraySem;
+static uint8_t au8_shared_array[8] = {0};
+static uint8_t au8_sem_array[2] = {0};
 
 /*
 *********************************************************************************************************
@@ -71,6 +78,8 @@ static  CPU_STK  StartupTaskStk[APP_CFG_STARTUP_TASK_STK_SIZE];
 */
 
 static  void  StartupTask (void  *p_arg);
+static  void  TaskA (void *p_arg);
+static  void  TaskB (void  *p_arg);
 
 
 /*
@@ -108,6 +117,16 @@ int  main (void)
     }
 
     App_OS_SetAllHooks();                                       /* Set all applications hooks                           */
+    
+    OSMutexCreate((OS_MUTEX  *)&ArrayMutex,                       /* Create Mutex */
+                 (CPU_CHAR   *)"My Array. Mutex",
+                 (OS_ERR     *)&os_err);
+    
+    /* Create a Semaphore */
+    OSSemCreate((OS_SEM *)&ArraySem,
+                 (CPU_CHAR *)"My Array Sem",
+                 (OS_SEM_CTR )0u,
+                 (OS_ERR *)&os_err);
 
     OSTaskCreate(&StartupTaskTCB,                               /* Create the startup task                              */
                  "Startup Task",
@@ -153,6 +172,9 @@ int  main (void)
 static  void  StartupTask (void *p_arg)
 {
     OS_ERR  os_err;
+    OS_ERR  taskA_err;
+    OS_ERR  taskB_err;
+    CPU_TS ts;
 
 
    (void)p_arg;
@@ -171,14 +193,128 @@ static  void  StartupTask (void *p_arg)
 #ifdef CPU_CFG_INT_DIS_MEAS_EN
     CPU_IntDisMeasMaxCurReset();
 #endif
+    /* Create Task A and B */
+    OSTaskCreate(
+        &TaskATCB,
+        "Task A",
+        TaskA,
+        NULL,
+        APP_CFG_TASKA_TASK_PRIO,
+        &TaskAStk[0],
+        APP_CFG_DEFAULT_TASK_STK_SIZE/10,
+        APP_CFG_DEFAULT_TASK_STK_SIZE,
+        0u,
+        0u,
+        0u,
+        (OS_OPT_TASK_STK_CHK | OS_OPT_TASK_STK_CLR),
+        &taskA_err);
+        
+    if (taskA_err != OS_ERR_NONE) {
+        while (1);
+    }
 
+    OSTaskCreate(
+        &TaskBTCB,
+        "Task B",
+        TaskB,
+        NULL,
+        APP_CFG_TASKB_TASK_PRIO,
+        &TaskBStk[0],
+        APP_CFG_DEFAULT_TASK_STK_SIZE/10,
+        APP_CFG_DEFAULT_TASK_STK_SIZE,
+        0u,
+        0u,
+        0u,
+        (OS_OPT_TASK_STK_CHK | OS_OPT_TASK_STK_CLR),
+        &taskB_err);
+    
+    if (taskB_err != OS_ERR_NONE) {
+        while (1);
+    }
+    
     while (DEF_TRUE) {                                          /* Task body, always written as an infinite loop.       */
-        //BSP_LED_Toggle(USER_LD2);
-        HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
-        HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_1);
-        HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_14);
         OSTimeDlyHMSM(0u, 0u, 1u, 0u,
-                      OS_OPT_TIME_HMSM_STRICT,
-                      &os_err);
+            OS_OPT_TIME_HMSM_STRICT,
+            &os_err);
+        OSMutexPend((OS_MUTEX  *)&ArrayMutex,
+            (OS_TICK    )0,
+            (OS_OPT     )OS_OPT_PEND_NON_BLOCKING,
+            (CPU_TS    *)&ts,
+            (OS_ERR    *)&os_err);
+        /* Access shared resource is resource is available  */                                 
+        if(os_err == OS_ERR_NONE)
+        {
+            /* Resource was available */
+            Mem_Set(au8_shared_array, 0xc5u, 8u);
+            HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_14);
+            
+            /* Release the resource since we are done using it */
+            OSMutexPost((OS_MUTEX  *)&ArrayMutex,                         
+                (OS_OPT     )OS_OPT_POST_NONE,
+                (OS_ERR    *)&os_err);
+        }
+    }
+}
+
+static  void  TaskA (void *p_arg)
+{
+   OS_ERR  os_err;
+   CPU_TS ts;
+
+   (void)p_arg;
+   
+    while (DEF_TRUE) {                                          /* Task body, always written as an infinite loop.       */
+        OSTimeDlyHMSM(0u, 0u, 1u, 0u,
+            OS_OPT_TIME_HMSM_STRICT,
+            &os_err);
+        OSMutexPend((OS_MUTEX  *)&ArrayMutex,                    
+            (OS_TICK    )0,
+            (OS_OPT     )OS_OPT_PEND_NON_BLOCKING,
+            (CPU_TS    *)&ts,
+            (OS_ERR    *)&os_err);
+        /* Access shared resource after checking if mutex was available */                                 
+        if(os_err == OS_ERR_NONE)
+        {
+            /* Resource was available */
+            Mem_Set(au8_shared_array, 0xdeu, 8u);
+
+           /*  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0); */
+            
+            /* Release the resource since we are done using it */
+            OSMutexPost((OS_MUTEX  *)&ArrayMutex,                         
+                (OS_OPT     )OS_OPT_POST_NONE,
+                (OS_ERR    *)&os_err);
+        }
+        /* Wait for a signal from Task B */
+        OSSemPend((OS_SEM  *)&ArraySem,                    
+            (OS_TICK    )0,
+            (OS_OPT     )OS_OPT_PEND_NON_BLOCKING,
+            (CPU_TS    *)&ts,
+            (OS_ERR    *)&os_err);
+        if(os_err == OS_ERR_NONE)
+        {
+            /* Task B signalled, now the array can be written */
+            Mem_Set(au8_sem_array, 0xafu, 2u);
+            HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
+        }
+    }
+}
+
+static  void  TaskB (void *p_arg)
+{
+   OS_ERR  os_err;
+
+   (void)p_arg;
+   
+    while (DEF_TRUE) {                                          /* Task body, always written as an infinite loop.       */
+        OSTimeDlyHMSM(0u, 0u, 5u, 0u,
+            OS_OPT_TIME_HMSM_STRICT,
+            &os_err);
+        
+
+        /* Every 5 seconds the Sem will be posted */
+        OSSemPost((OS_SEM  *)&ArraySem,                         
+            (OS_OPT     )OS_OPT_POST_NONE,
+            (OS_ERR    *)&os_err);
     }
 }

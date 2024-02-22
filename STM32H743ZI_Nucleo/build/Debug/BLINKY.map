@@ -347,7 +347,6 @@ Discarded input sections
                 0x00000000       0x50 CMakeFiles/BLINKY.dir/Micrium/Software/uC-LIB/lib_mem.c.obj
  .text.Mem_DynPoolCreateInternal
                 0x00000000       0xb8 CMakeFiles/BLINKY.dir/Micrium/Software/uC-LIB/lib_mem.c.obj
- .text.Mem_Set  0x00000000       0x70 CMakeFiles/BLINKY.dir/Micrium/Software/uC-LIB/lib_mem.c.obj
  .text.Mem_Clr  0x00000000        0xc CMakeFiles/BLINKY.dir/Micrium/Software/uC-LIB/lib_mem.c.obj
  .text.Mem_Copy
                 0x00000000       0x68 CMakeFiles/BLINKY.dir/Micrium/Software/uC-LIB/lib_mem.c.obj
@@ -883,29 +882,14 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
  .data          0x00000000        0x0 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
  .bss           0x00000000        0x0 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
- .text.OSSemCreate
-                0x00000000       0x48 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
- .text.OSSemPend
-                0x00000000      0x128 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
  .text.OSSemPendAbort
                 0x00000000       0xc4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
- .text.OSSemPost
-                0x00000000       0xcc CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
  .text.OSSemSet
                 0x00000000       0x5c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
  .text.OS_SemClr
                 0x00000000       0x18 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
  .text.OSSemDel
                 0x00000000       0xc0 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
- .debug_info    0x00000000     0x114f CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
- .debug_abbrev  0x00000000      0x281 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
- .debug_loclists
-                0x00000000      0x5c4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
- .debug_aranges
-                0x00000000       0x50 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
- .debug_rnglists
-                0x00000000       0x3b CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
- .debug_macro   0x00000000       0x8b CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
  .debug_macro   0x00000000      0xac0 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
  .debug_macro   0x00000000       0x10 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
  .debug_macro   0x00000000      0x144 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
@@ -919,12 +903,6 @@ Discarded input sections
  .debug_macro   0x00000000       0x2f CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
  .debug_macro   0x00000000      0x2ce CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
  .debug_macro   0x00000000      0x2f6 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
- .debug_line    0x00000000      0xa93 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
- .debug_str     0x00000000     0xaff5 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
- .comment       0x00000000       0x58 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
- .debug_frame   0x00000000       0xec CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
- .ARM.attributes
-                0x00000000       0x32 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
  .group         0x00000000        0xc CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
  .group         0x00000000        0xc CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
  .group         0x00000000        0xc CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
@@ -2863,7 +2841,7 @@ LOAD c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/
                 0x08000000                g_pfnVectors
                 0x08000298                . = ALIGN (0x4)
 
-.text           0x08000298     0x349c
+.text           0x08000298     0x38cc
                 0x08000298                . = ALIGN (0x4)
  *(.text)
  .text          0x08000298      0x108 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_a.s.obj
@@ -3060,489 +3038,505 @@ LOAD c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/
  .text.Mem_Init
                 0x08000524        0xc CMakeFiles/BLINKY.dir/Micrium/Software/uC-LIB/lib_mem.c.obj
                 0x08000524                Mem_Init
+ .text.Mem_Set  0x08000530       0x70 CMakeFiles/BLINKY.dir/Micrium/Software/uC-LIB/lib_mem.c.obj
+                0x08000530                Mem_Set
  .text.OSCfg_Init
-                0x08000530        0x2 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x08000530                OSCfg_Init
- *fill*         0x08000532        0x2 
+                0x080005a0        0x2 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x080005a0                OSCfg_Init
+ *fill*         0x080005a2        0x2 
  .text.OS_IdleTask
-                0x08000534       0x1c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x08000534                OS_IdleTask
+                0x080005a4       0x1c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x080005a4                OS_IdleTask
  .text.OSIntEnter
-                0x08000550       0x20 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x08000550                OSIntEnter
+                0x080005c0       0x20 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x080005c0                OSIntEnter
  .text.OSIntExit
-                0x08000570       0x9c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x08000570                OSIntExit
- .text.OSSched  0x0800060c       0x84 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x0800060c                OSSched
+                0x080005e0       0x9c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x080005e0                OSIntExit
+ .text.OSSched  0x0800067c       0x84 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x0800067c                OSSched
  .text.OSSchedLock
-                0x08000690       0x54 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x08000690                OSSchedLock
+                0x08000700       0x54 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x08000700                OSSchedLock
  .text.OSSchedUnlock
-                0x080006e4       0x68 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x080006e4                OSSchedUnlock
- .text.OSStart  0x0800074c       0x80 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x0800074c                OSStart
+                0x08000754       0x68 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x08000754                OSSchedUnlock
+ .text.OSStart  0x080007bc       0x80 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x080007bc                OSStart
  .text.OS_IdleTaskInit
-                0x080007cc       0x4c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x080007cc                OS_IdleTaskInit
+                0x0800083c       0x4c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x0800083c                OS_IdleTaskInit
  .text.OS_PendListInit
-                0x08000818        0x8 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x08000818                OS_PendListInit
+                0x08000888        0x8 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x08000888                OS_PendListInit
  .text.OS_PendListInsertPrio
-                0x08000820       0x48 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x08000820                OS_PendListInsertPrio
+                0x08000890       0x48 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x08000890                OS_PendListInsertPrio
  .text.OS_PendListRemove
-                0x08000868       0x36 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x08000868                OS_PendListRemove
+                0x080008d8       0x36 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x080008d8                OS_PendListRemove
  .text.OS_PendListChangePrio
-                0x0800089e       0x1e CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x0800089e                OS_PendListChangePrio
+                0x0800090e       0x1e CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x0800090e                OS_PendListChangePrio
  .text.OS_RdyListInit
-                0x080008bc       0x20 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x080008bc                OS_RdyListInit
- .text.OSInit   0x080008dc      0x134 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x080008dc                OSInit
+                0x0800092c       0x20 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x0800092c                OS_RdyListInit
+ .text.OSInit   0x0800094c      0x134 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x0800094c                OSInit
  .text.OS_RdyListInsertHead
-                0x08000a10       0x38 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x08000a10                OS_RdyListInsertHead
+                0x08000a80       0x38 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x08000a80                OS_RdyListInsertHead
  .text.OS_RdyListInsertTail
-                0x08000a48       0x38 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x08000a48                OS_RdyListInsertTail
+                0x08000ab8       0x38 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x08000ab8                OS_RdyListInsertTail
  .text.OS_RdyListInsert
-                0x08000a80       0x2c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x08000a80                OS_RdyListInsert
- .text.OS_Post  0x08000aac       0x7e CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x08000aac                OS_Post
+                0x08000af0       0x2c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x08000af0                OS_RdyListInsert
+ .text.OS_Post  0x08000b1c       0x7e CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x08000b1c                OS_Post
  .text.OS_RdyListMoveHeadToTail
-                0x08000b2a       0x36 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x08000b2a                OS_RdyListMoveHeadToTail
+                0x08000b9a       0x36 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x08000b9a                OS_RdyListMoveHeadToTail
  .text.OS_RdyListRemove
-                0x08000b60       0x50 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x08000b60                OS_RdyListRemove
+                0x08000bd0       0x50 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x08000bd0                OS_RdyListRemove
  .text.OS_SchedRoundRobin
-                0x08000bb0       0x8c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x08000bb0                OS_SchedRoundRobin
+                0x08000c20       0x8c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x08000c20                OS_SchedRoundRobin
  .text.OS_TaskBlock
-                0x08000c3c       0x2c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x08000c3c                OS_TaskBlock
- .text.OS_Pend  0x08000c68       0x38 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
-                0x08000c68                OS_Pend
+                0x08000cac       0x2c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x08000cac                OS_TaskBlock
+ .text.OS_Pend  0x08000cd8       0x38 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_core.c.obj
+                0x08000cd8                OS_Pend
  .text.OS_MemInit
-                0x08000ca0        0x6 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mem.c.obj
-                0x08000ca0                OS_MemInit
- *fill*         0x08000ca6        0x2 
+                0x08000d10        0x6 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mem.c.obj
+                0x08000d10                OS_MemInit
+ *fill*         0x08000d16        0x2 
  .text.OS_MsgPoolInit
-                0x08000ca8       0x68 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_msg.c.obj
-                0x08000ca8                OS_MsgPoolInit
+                0x08000d18       0x68 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_msg.c.obj
+                0x08000d18                OS_MsgPoolInit
  .text.OS_MsgQFreeAll
-                0x08000d10       0x40 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_msg.c.obj
-                0x08000d10                OS_MsgQFreeAll
+                0x08000d80       0x40 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_msg.c.obj
+                0x08000d80                OS_MsgQFreeAll
  .text.OS_MsgQInit
-                0x08000d50        0xc CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_msg.c.obj
-                0x08000d50                OS_MsgQInit
+                0x08000dc0        0xc CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_msg.c.obj
+                0x08000dc0                OS_MsgQInit
  .text.OSMutexCreate
-                0x08000d5c       0x48 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
-                0x08000d5c                OSMutexCreate
+                0x08000dcc       0x48 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
+                0x08000dcc                OSMutexCreate
  .text.OS_MutexGrpAdd
-                0x08000da4        0x8 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
-                0x08000da4                OS_MutexGrpAdd
+                0x08000e14        0x8 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
+                0x08000e14                OS_MutexGrpAdd
  .text.OSMutexPend
-                0x08000dac      0x168 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
-                0x08000dac                OSMutexPend
+                0x08000e1c      0x168 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
+                0x08000e1c                OSMutexPend
  .text.OS_MutexGrpRemove
-                0x08000f14       0x14 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
-                0x08000f14                OS_MutexGrpRemove
+                0x08000f84       0x14 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
+                0x08000f84                OS_MutexGrpRemove
  .text.OS_MutexGrpPrioFindHighest
-                0x08000f28       0x22 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
-                0x08000f28                OS_MutexGrpPrioFindHighest
- *fill*         0x08000f4a        0x2 
+                0x08000f98       0x22 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
+                0x08000f98                OS_MutexGrpPrioFindHighest
+ *fill*         0x08000fba        0x2 
  .text.OSMutexPost
-                0x08000f4c      0x144 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
-                0x08000f4c                OSMutexPost
+                0x08000fbc      0x144 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
+                0x08000fbc                OSMutexPost
  .text.OS_MutexGrpPostAll
-                0x08001090       0x46 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
-                0x08001090                OS_MutexGrpPostAll
- *fill*         0x080010d6        0x2 
+                0x08001100       0x46 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
+                0x08001100                OS_MutexGrpPostAll
+ *fill*         0x08001146        0x2 
  .text.OS_PrioInit
-                0x080010d8       0x18 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_prio.c.obj
-                0x080010d8                OS_PrioInit
+                0x08001148       0x18 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_prio.c.obj
+                0x08001148                OS_PrioInit
  .text.OS_PrioGetHighest
-                0x080010f0       0x24 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_prio.c.obj
-                0x080010f0                OS_PrioGetHighest
+                0x08001160       0x24 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_prio.c.obj
+                0x08001160                OS_PrioGetHighest
  .text.OS_PrioInsert
-                0x08001114       0x20 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_prio.c.obj
-                0x08001114                OS_PrioInsert
+                0x08001184       0x20 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_prio.c.obj
+                0x08001184                OS_PrioInsert
  .text.OS_PrioRemove
-                0x08001134       0x24 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_prio.c.obj
-                0x08001134                OS_PrioRemove
+                0x080011a4       0x24 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_prio.c.obj
+                0x080011a4                OS_PrioRemove
+ .text.OSSemCreate
+                0x080011c8       0x48 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
+                0x080011c8                OSSemCreate
+ .text.OSSemPend
+                0x08001210      0x128 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
+                0x08001210                OSSemPend
+ .text.OSSemPost
+                0x08001338       0xcc CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
+                0x08001338                OSSemPost
  .text.OSStatReset
-                0x08001158       0x1c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
-                0x08001158                OSStatReset
+                0x08001404       0x1c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
+                0x08001404                OSStatReset
  .text.OS_StatTask
-                0x08001174      0x128 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
-                0x08001174                OS_StatTask
+                0x08001420      0x128 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
+                0x08001420                OS_StatTask
  .text.OSStatTaskCPUUsageInit
-                0x0800129c       0xcc CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
-                0x0800129c                OSStatTaskCPUUsageInit
+                0x08001548       0xcc CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
+                0x08001548                OSStatTaskCPUUsageInit
  .text.OS_StatTaskInit
-                0x08001368       0xa4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
-                0x08001368                OS_StatTaskInit
+                0x08001614       0xa4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
+                0x08001614                OS_StatTaskInit
  .text.OSTaskResume
-                0x0800140c      0x100 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
-                0x0800140c                OSTaskResume
+                0x080016b8      0x100 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+                0x080016b8                OSTaskResume
  .text.OSTaskSemPend
-                0x0800150c       0xe4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
-                0x0800150c                OSTaskSemPend
+                0x080017b8       0xe4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+                0x080017b8                OSTaskSemPend
  .text.OSTaskSemPost
-                0x080015f0       0xe4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
-                0x080015f0                OSTaskSemPost
+                0x0800189c       0xe4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+                0x0800189c                OSTaskSemPost
  .text.OSTaskSuspend
-                0x080016d4      0x124 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
-                0x080016d4                OSTaskSuspend
+                0x08001980      0x124 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+                0x08001980                OSTaskSuspend
  .text.OS_TaskInit
-                0x080017f8       0x18 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
-                0x080017f8                OS_TaskInit
+                0x08001aa4       0x18 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+                0x08001aa4                OS_TaskInit
  .text.OS_TaskInitTCB
-                0x08001810       0xa4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
-                0x08001810                OS_TaskInitTCB
+                0x08001abc       0xa4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+                0x08001abc                OS_TaskInitTCB
  .text.OSTaskCreate
-                0x080018b4      0x19c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
-                0x080018b4                OSTaskCreate
+                0x08001b60      0x19c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+                0x08001b60                OSTaskCreate
  .text.OS_TaskChangePrio
-                0x08001a50       0xb4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
-                0x08001a50                OS_TaskChangePrio
+                0x08001cfc       0xb4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+                0x08001cfc                OS_TaskChangePrio
  .text.OSTaskDel
-                0x08001b04      0x14c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
-                0x08001b04                OSTaskDel
+                0x08001db0      0x14c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+                0x08001db0                OSTaskDel
  .text.OS_TaskReturn
-                0x08001c50       0x20 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
-                0x08001c50                OS_TaskReturn
+                0x08001efc       0x20 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+                0x08001efc                OS_TaskReturn
  .text.OS_TickListUpdateDly
-                0x08001c70       0x6c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
+                0x08001f1c       0x6c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
  .text.OS_TickListUpdateTimeout
-                0x08001cdc       0xd4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
+                0x08001f88       0xd4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
  .text.OS_TickTask
-                0x08001db0       0x48 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
-                0x08001db0                OS_TickTask
+                0x0800205c       0x48 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
+                0x0800205c                OS_TickTask
  .text.OS_TickTaskInit
-                0x08001df8       0x94 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
-                0x08001df8                OS_TickTaskInit
+                0x080020a4       0x94 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
+                0x080020a4                OS_TickTaskInit
  .text.OS_TickListInsert
-                0x08001e8c       0x62 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
-                0x08001e8c                OS_TickListInsert
- *fill*         0x08001eee        0x2 
+                0x08002138       0x62 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
+                0x08002138                OS_TickListInsert
+ *fill*         0x0800219a        0x2 
  .text.OS_TickListInsertDly
-                0x08001ef0       0x88 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
-                0x08001ef0                OS_TickListInsertDly
+                0x0800219c       0x88 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
+                0x0800219c                OS_TickListInsertDly
  .text.OS_TickListRemove
-                0x08001f78       0x46 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
-                0x08001f78                OS_TickListRemove
- *fill*         0x08001fbe        0x2 
+                0x08002224       0x46 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
+                0x08002224                OS_TickListRemove
+ *fill*         0x0800226a        0x2 
  .text.OSTimeDly
-                0x08001fc0       0x9c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
-                0x08001fc0                OSTimeDly
+                0x0800226c       0x9c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
+                0x0800226c                OSTimeDly
  .text.OSTimeDlyHMSM
-                0x0800205c      0x150 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
-                0x0800205c                OSTimeDlyHMSM
+                0x08002308      0x150 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
+                0x08002308                OSTimeDlyHMSM
  .text.OSTimeTick
-                0x080021ac       0x70 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
-                0x080021ac                OSTimeTick
+                0x08002458       0x70 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
+                0x08002458                OSTimeTick
  .text.OS_TmrLock
-                0x0800221c       0x24 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
+                0x080024c8       0x24 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
  .text.OS_TmrUnlock
-                0x08002240       0x20 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
+                0x080024ec       0x20 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
  .text.OS_TmrInit
-                0x08002260       0xe0 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
-                0x08002260                OS_TmrInit
+                0x0800250c       0xe0 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
+                0x0800250c                OS_TmrInit
  .text.OS_TmrUnlink
-                0x08002340       0x34 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
-                0x08002340                OS_TmrUnlink
+                0x080025ec       0x34 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
+                0x080025ec                OS_TmrUnlink
  .text.OS_TmrTask
-                0x08002374       0x7c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
-                0x08002374                OS_TmrTask
+                0x08002620       0x7c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
+                0x08002620                OS_TmrTask
  .text.OSIdleTaskHook
-                0x080023f0       0x10 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
-                0x080023f0                OSIdleTaskHook
+                0x0800269c       0x10 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+                0x0800269c                OSIdleTaskHook
  .text.OSInitHook
-                0x08002400       0x38 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
-                0x08002400                OSInitHook
+                0x080026ac       0x38 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+                0x080026ac                OSInitHook
  .text.OSStatTaskHook
-                0x08002438       0x10 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
-                0x08002438                OSStatTaskHook
+                0x080026e4       0x10 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+                0x080026e4                OSStatTaskHook
  .text.OSTaskCreateHook
-                0x08002448       0x10 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
-                0x08002448                OSTaskCreateHook
+                0x080026f4       0x10 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+                0x080026f4                OSTaskCreateHook
  .text.OSTaskDelHook
-                0x08002458       0x10 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
-                0x08002458                OSTaskDelHook
+                0x08002704       0x10 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+                0x08002704                OSTaskDelHook
  .text.OSTaskReturnHook
-                0x08002468       0x10 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
-                0x08002468                OSTaskReturnHook
+                0x08002714       0x10 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+                0x08002714                OSTaskReturnHook
  .text.OSTaskStkInit
-                0x08002478      0x1a0 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
-                0x08002478                OSTaskStkInit
+                0x08002724      0x1a0 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+                0x08002724                OSTaskStkInit
  .text.OSTaskSwHook
-                0x08002618       0x50 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
-                0x08002618                OSTaskSwHook
+                0x080028c4       0x50 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+                0x080028c4                OSTaskSwHook
  .text.OSTimeTickHook
-                0x08002668       0x10 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
-                0x08002668                OSTimeTickHook
+                0x08002914       0x10 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+                0x08002914                OSTimeTickHook
  .text.OS_CPU_SysTickHandler
-                0x08002678       0x1c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
-                0x08002678                OS_CPU_SysTickHandler
+                0x08002924       0x1c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+                0x08002924                OS_CPU_SysTickHandler
  .text.OS_CPU_SysTickInit
-                0x08002694       0x26 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
-                0x08002694                OS_CPU_SysTickInit
- *fill*         0x080026ba        0x2 
+                0x08002940       0x26 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+                0x08002940                OS_CPU_SysTickInit
+ *fill*         0x08002966        0x2 
  .text.OS_CPU_SysTickInitFreq
-                0x080026bc       0x14 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
-                0x080026bc                OS_CPU_SysTickInitFreq
+                0x08002968       0x14 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+                0x08002968                OS_CPU_SysTickInitFreq
  .text.BSP_IntInit
-                0x080026d0       0x38 CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
-                0x080026d0                BSP_IntInit
+                0x0800297c       0x38 CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
+                0x0800297c                BSP_IntInit
  .text.SystemInit
-                0x08002708       0x6c CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
-                0x08002708                SystemInit
+                0x080029b4       0x6c CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+                0x080029b4                SystemInit
  .text.BSP_ClkInit
-                0x08002774       0xc4 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
-                0x08002774                BSP_ClkInit
+                0x08002a20       0xc4 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+                0x08002a20                BSP_ClkInit
  .text.BSP_ClkFreqGet
-                0x08002838       0x2a CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
-                0x08002838                BSP_ClkFreqGet
- *fill*         0x08002862        0x2 
+                0x08002ae4       0x2a CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+                0x08002ae4                BSP_ClkFreqGet
+ *fill*         0x08002b0e        0x2 
  .text.CPU_TS_TmrInit
-                0x08002864       0x4c CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
-                0x08002864                CPU_TS_TmrInit
+                0x08002b10       0x4c CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
+                0x08002b10                CPU_TS_TmrInit
  .text.BSP_LED_Init
-                0x080028b0       0x6c CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
-                0x080028b0                BSP_LED_Init
+                0x08002b5c       0x6c CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
+                0x08002b5c                BSP_LED_Init
  .text.BSP_OS_TickEnable
-                0x0800291c        0xe CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
-                0x0800291c                BSP_OS_TickEnable
+                0x08002bc8        0xe CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
+                0x08002bc8                BSP_OS_TickEnable
  .text.BSP_OS_TickDisable
-                0x0800292a        0xe CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
-                0x0800292a                BSP_OS_TickDisable
+                0x08002bd6        0xe CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
+                0x08002bd6                BSP_OS_TickDisable
  .text.BSP_OS_TickInit
-                0x08002938       0x22 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
-                0x08002938                BSP_OS_TickInit
+                0x08002be4       0x22 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
+                0x08002be4                BSP_OS_TickInit
  .text.HAL_InitTick
-                0x0800295a        0x4 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
-                0x0800295a                HAL_InitTick
- *fill*         0x0800295e        0x2 
+                0x08002c06        0x4 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
+                0x08002c06                HAL_InitTick
+ *fill*         0x08002c0a        0x2 
  .text.HAL_GPIO_Init
-                0x08002960      0x1f8 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
-                0x08002960                HAL_GPIO_Init
+                0x08002c0c      0x1f8 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+                0x08002c0c                HAL_GPIO_Init
  .text.HAL_GPIO_TogglePin
-                0x08002b58        0x8 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
-                0x08002b58                HAL_GPIO_TogglePin
+                0x08002e04        0x8 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+                0x08002e04                HAL_GPIO_TogglePin
  .text.HAL_MspInit
-                0x08002b60        0x2 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x08002b60                HAL_MspInit
+                0x08002e0c        0x2 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x08002e0c                HAL_MspInit
  .text.HAL_Init
-                0x08002b62       0x1e CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x08002b62                HAL_Init
+                0x08002e0e       0x1e CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x08002e0e                HAL_Init
  .text.HAL_GetTick
-                0x08002b80        0xc CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x08002b80                HAL_GetTick
+                0x08002e2c        0xc CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x08002e2c                HAL_GetTick
  .text.HAL_EnableCompensationCell
-                0x08002b8c       0x10 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x08002b8c                HAL_EnableCompensationCell
+                0x08002e38       0x10 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x08002e38                HAL_EnableCompensationCell
  .text.HAL_RCC_OscConfig
-                0x08002b9c      0x58c CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
-                0x08002b9c                HAL_RCC_OscConfig
+                0x08002e48      0x58c CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+                0x08002e48                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x08003128      0x1c8 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
-                0x08003128                HAL_RCC_GetSysClockFreq
+                0x080033d4      0x1c8 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+                0x080033d4                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x080032f0      0x1f4 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
-                0x080032f0                HAL_RCC_ClockConfig
+                0x0800359c      0x1f4 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+                0x0800359c                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x080034e4       0x34 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
-                0x080034e4                HAL_RCC_GetHCLKFreq
+                0x08003790       0x34 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+                0x08003790                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x08003518       0x2c CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
-                0x08003518                HAL_RCC_GetPCLK1Freq
+                0x080037c4       0x2c CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+                0x080037c4                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x08003544       0x2c CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
-                0x08003544                HAL_RCC_GetPCLK2Freq
+                0x080037f0       0x2c CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+                0x080037f0                HAL_RCC_GetPCLK2Freq
  .text.HAL_NVIC_SetPriorityGrouping
-                0x08003570       0x24 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
-                0x08003570                HAL_NVIC_SetPriorityGrouping
+                0x0800381c       0x24 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+                0x0800381c                HAL_NVIC_SetPriorityGrouping
  .text.HAL_RCCEx_GetD1SysClockFreq
-                0x08003594       0x34 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
-                0x08003594                HAL_RCCEx_GetD1SysClockFreq
+                0x08003840       0x34 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+                0x08003840                HAL_RCCEx_GetD1SysClockFreq
  .text.StartupTask
-                0x080035c8       0x50 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
- .text.main     0x08003618       0x84 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
-                0x08003618                main
+                0x08003874       0xf8 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .text.TaskB    0x0800396c       0x2c CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .text.TaskA    0x08003998       0x8c CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .text.main     0x08003a24       0xa8 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+                0x08003a24                main
  .text.App_OS_IdleTaskHook
-                0x0800369c        0x2 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
-                0x0800369c                App_OS_IdleTaskHook
+                0x08003acc        0x2 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
+                0x08003acc                App_OS_IdleTaskHook
  .text.App_OS_StatTaskHook
-                0x0800369e        0x2 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
-                0x0800369e                App_OS_StatTaskHook
+                0x08003ace        0x2 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
+                0x08003ace                App_OS_StatTaskHook
  .text.App_OS_TaskCreateHook
-                0x080036a0        0x2 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
-                0x080036a0                App_OS_TaskCreateHook
+                0x08003ad0        0x2 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
+                0x08003ad0                App_OS_TaskCreateHook
  .text.App_OS_TaskDelHook
-                0x080036a2        0x2 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
-                0x080036a2                App_OS_TaskDelHook
+                0x08003ad2        0x2 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
+                0x08003ad2                App_OS_TaskDelHook
  .text.App_OS_TaskReturnHook
-                0x080036a4        0x2 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
-                0x080036a4                App_OS_TaskReturnHook
+                0x08003ad4        0x2 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
+                0x08003ad4                App_OS_TaskReturnHook
  .text.App_OS_TaskSwHook
-                0x080036a6        0x2 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
-                0x080036a6                App_OS_TaskSwHook
+                0x08003ad6        0x2 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
+                0x08003ad6                App_OS_TaskSwHook
  .text.App_OS_TimeTickHook
-                0x080036a8        0x2 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
-                0x080036a8                App_OS_TimeTickHook
- *fill*         0x080036aa        0x2 
+                0x08003ad8        0x2 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
+                0x08003ad8                App_OS_TimeTickHook
+ *fill*         0x08003ada        0x2 
  .text.App_OS_SetAllHooks
-                0x080036ac       0x70 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
-                0x080036ac                App_OS_SetAllHooks
+                0x08003adc       0x70 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
+                0x08003adc                App_OS_SetAllHooks
  *(.glue_7)
- .glue_7        0x0800371c        0x0 linker stubs
+ .glue_7        0x08003b4c        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0800371c        0x0 linker stubs
+ .glue_7t       0x08003b4c        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0800371c        0x0 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtbegin.o
+ .eh_frame      0x08003b4c        0x0 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtbegin.o
  *(.init)
- .init          0x0800371c        0x4 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crti.o
-                0x0800371c                _init
- .init          0x08003720        0x8 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtn.o
+ .init          0x08003b4c        0x4 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crti.o
+                0x08003b4c                _init
+ .init          0x08003b50        0x8 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtn.o
  *(.fini)
- .fini          0x08003728        0x4 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crti.o
-                0x08003728                _fini
- .fini          0x0800372c        0x8 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtn.o
-                0x08003734                . = ALIGN (0x4)
-                0x08003734                _etext = .
+ .fini          0x08003b58        0x4 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crti.o
+                0x08003b58                _fini
+ .fini          0x08003b5c        0x8 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtn.o
+                0x08003b64                . = ALIGN (0x4)
+                0x08003b64                _etext = .
 
-.vfp11_veneer   0x08003734        0x0
- .vfp11_veneer  0x08003734        0x0 linker stubs
+.vfp11_veneer   0x08003b64        0x0
+ .vfp11_veneer  0x08003b64        0x0 linker stubs
 
-.v4_bx          0x08003734        0x0
- .v4_bx         0x08003734        0x0 linker stubs
+.v4_bx          0x08003b64        0x0
+ .v4_bx         0x08003b64        0x0 linker stubs
 
-.iplt           0x08003734        0x0
- .iplt          0x08003734        0x0 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtbegin.o
+.iplt           0x08003b64        0x0
+ .iplt          0x08003b64        0x0 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtbegin.o
 
-.rodata         0x08003734       0x78
-                0x08003734                . = ALIGN (0x4)
+.rodata         0x08003b64       0xa8
+                0x08003b64                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.OSCfg_ISRStkBasePtr
-                0x08003734        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x08003734                OSCfg_ISRStkBasePtr
+                0x08003b64        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003b64                OSCfg_ISRStkBasePtr
  .rodata.OSCfg_ISRStkSize
-                0x08003738        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x08003738                OSCfg_ISRStkSize
+                0x08003b68        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003b68                OSCfg_ISRStkSize
  .rodata.OSCfg_IdleTaskStkBasePtr
-                0x0800373c        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x0800373c                OSCfg_IdleTaskStkBasePtr
+                0x08003b6c        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003b6c                OSCfg_IdleTaskStkBasePtr
  .rodata.OSCfg_IdleTaskStkLimit
-                0x08003740        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x08003740                OSCfg_IdleTaskStkLimit
+                0x08003b70        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003b70                OSCfg_IdleTaskStkLimit
  .rodata.OSCfg_IdleTaskStkSize
-                0x08003744        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x08003744                OSCfg_IdleTaskStkSize
+                0x08003b74        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003b74                OSCfg_IdleTaskStkSize
  .rodata.OSCfg_MsgPoolBasePtr
-                0x08003748        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x08003748                OSCfg_MsgPoolBasePtr
+                0x08003b78        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003b78                OSCfg_MsgPoolBasePtr
  .rodata.OSCfg_MsgPoolSize
-                0x0800374c        0x2 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x0800374c                OSCfg_MsgPoolSize
+                0x08003b7c        0x2 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003b7c                OSCfg_MsgPoolSize
  .rodata.OSCfg_StatTaskPrio
-                0x0800374e        0x1 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x0800374e                OSCfg_StatTaskPrio
- *fill*         0x0800374f        0x1 
+                0x08003b7e        0x1 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003b7e                OSCfg_StatTaskPrio
+ *fill*         0x08003b7f        0x1 
  .rodata.OSCfg_StatTaskRate_Hz
-                0x08003750        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x08003750                OSCfg_StatTaskRate_Hz
+                0x08003b80        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003b80                OSCfg_StatTaskRate_Hz
  .rodata.OSCfg_StatTaskStkBasePtr
-                0x08003754        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x08003754                OSCfg_StatTaskStkBasePtr
+                0x08003b84        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003b84                OSCfg_StatTaskStkBasePtr
  .rodata.OSCfg_StatTaskStkLimit
-                0x08003758        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x08003758                OSCfg_StatTaskStkLimit
+                0x08003b88        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003b88                OSCfg_StatTaskStkLimit
  .rodata.OSCfg_StatTaskStkSize
-                0x0800375c        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x0800375c                OSCfg_StatTaskStkSize
+                0x08003b8c        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003b8c                OSCfg_StatTaskStkSize
  .rodata.OSCfg_StkSizeMin
-                0x08003760        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x08003760                OSCfg_StkSizeMin
+                0x08003b90        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003b90                OSCfg_StkSizeMin
  .rodata.OSCfg_TickRate_Hz
-                0x08003764        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x08003764                OSCfg_TickRate_Hz
+                0x08003b94        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003b94                OSCfg_TickRate_Hz
  .rodata.OSCfg_TickTaskPrio
-                0x08003768        0x1 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x08003768                OSCfg_TickTaskPrio
- *fill*         0x08003769        0x3 
+                0x08003b98        0x1 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003b98                OSCfg_TickTaskPrio
+ *fill*         0x08003b99        0x3 
  .rodata.OSCfg_TickTaskStkBasePtr
-                0x0800376c        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x0800376c                OSCfg_TickTaskStkBasePtr
+                0x08003b9c        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003b9c                OSCfg_TickTaskStkBasePtr
  .rodata.OSCfg_TickTaskStkLimit
-                0x08003770        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x08003770                OSCfg_TickTaskStkLimit
+                0x08003ba0        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003ba0                OSCfg_TickTaskStkLimit
  .rodata.OSCfg_TickTaskStkSize
-                0x08003774        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x08003774                OSCfg_TickTaskStkSize
+                0x08003ba4        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003ba4                OSCfg_TickTaskStkSize
  .rodata.OSCfg_TmrTaskPrio
-                0x08003778        0x1 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x08003778                OSCfg_TmrTaskPrio
- *fill*         0x08003779        0x3 
+                0x08003ba8        0x1 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003ba8                OSCfg_TmrTaskPrio
+ *fill*         0x08003ba9        0x3 
  .rodata.OSCfg_TmrTaskRate_Hz
-                0x0800377c        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x0800377c                OSCfg_TmrTaskRate_Hz
+                0x08003bac        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003bac                OSCfg_TmrTaskRate_Hz
  .rodata.OSCfg_TmrTaskStkBasePtr
-                0x08003780        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x08003780                OSCfg_TmrTaskStkBasePtr
+                0x08003bb0        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003bb0                OSCfg_TmrTaskStkBasePtr
  .rodata.OSCfg_TmrTaskStkLimit
-                0x08003784        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x08003784                OSCfg_TmrTaskStkLimit
+                0x08003bb4        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003bb4                OSCfg_TmrTaskStkLimit
  .rodata.OSCfg_TmrTaskStkSize
-                0x08003788        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
-                0x08003788                OSCfg_TmrTaskStkSize
+                0x08003bb8        0x4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_cfg_app.c.obj
+                0x08003bb8                OSCfg_TmrTaskStkSize
  .rodata.D1CorePrescTable
-                0x0800378c       0x10 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
-                0x0800378c                D1CorePrescTable
+                0x08003bbc       0x10 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+                0x08003bbc                D1CorePrescTable
+ .rodata.StartupTask.str1.4
+                0x08003bcc        0xf CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ *fill*         0x08003bdb        0x1 
  .rodata.main.str1.4
-                0x0800379c        0xd CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
-                0x080037ac                . = ALIGN (0x4)
- *fill*         0x080037a9        0x3 
+                0x08003bdc       0x2d CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+                0x08003c0c                . = ALIGN (0x4)
+ *fill*         0x08003c09        0x3 
 
-.rel.dyn        0x080037ac        0x0
- .rel.iplt      0x080037ac        0x0 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtbegin.o
+.rel.dyn        0x08003c0c        0x0
+ .rel.iplt      0x08003c0c        0x0 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x080037ac        0x0
-                0x080037ac                __exidx_start = .
+.ARM            0x08003c0c        0x0
+                0x08003c0c                __exidx_start = .
  *(.ARM.exidx*)
-                0x080037ac                __exidx_end = .
+                0x08003c0c                __exidx_end = .
 
-.preinit_array  0x080037ac        0x0
-                0x080037ac                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08003c0c        0x0
+                0x08003c0c                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x080037ac                PROVIDE (__preinit_array_end = .)
+                0x08003c0c                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x080037ac        0x4
-                0x080037ac                PROVIDE (__init_array_start = .)
+.init_array     0x08003c0c        0x4
+                0x08003c0c                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x080037ac        0x4 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtbegin.o
-                0x080037b0                PROVIDE (__init_array_end = .)
+ .init_array    0x08003c0c        0x4 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtbegin.o
+                0x08003c10                PROVIDE (__init_array_end = .)
 
-.fini_array     0x080037b0        0x4
+.fini_array     0x08003c10        0x4
                 [!provide]                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x080037b0        0x4 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtbegin.o
+ .fini_array    0x08003c10        0x4 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtbegin.o
                 [!provide]                PROVIDE (__fini_array_end = .)
-                0x080037b4                _sidata = LOADADDR (.data)
+                0x08003c14                _sidata = LOADADDR (.data)
 
-.data           0x20000000        0x8 load address 0x080037b4
+.data           0x20000000        0x8 load address 0x08003c14
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -3555,37 +3549,37 @@ LOAD c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/
                 0x20000004                SystemD2Clock
                 0x20000008                . = ALIGN (0x4)
                 0x20000008                _edata = .
-                0x080037bc                _sisram_d1 = LOADADDR (.sram_d1)
+                0x08003c1c                _sisram_d1 = LOADADDR (.sram_d1)
 
 .tm_clone_table
-                0x20000008        0x0 load address 0x080037bc
+                0x20000008        0x0 load address 0x08003c1c
  .tm_clone_table
                 0x20000008        0x0 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtbegin.o
  .tm_clone_table
                 0x20000008        0x0 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtend.o
 
-.igot.plt       0x20000008        0x0 load address 0x080037bc
+.igot.plt       0x20000008        0x0 load address 0x08003c1c
  .igot.plt      0x20000008        0x0 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtbegin.o
 
-.sram_d1        0x24000000        0x0 load address 0x080037bc
+.sram_d1        0x24000000        0x0 load address 0x08003c1c
                 0x24000000                . = ALIGN (0x4)
                 0x24000000                _ssram_d1 = .
  *(.sram_d1)
  *(.sram_d1*)
                 0x24000000                . = ALIGN (0x4)
                 0x24000000                _esram_d1 = .
-                0x080037bc                _sisram_d2 = LOADADDR (.sram_d2)
+                0x08003c1c                _sisram_d2 = LOADADDR (.sram_d2)
 
-.sram_d2        0x30000000        0x0 load address 0x080037bc
+.sram_d2        0x30000000        0x0 load address 0x08003c1c
                 0x30000000                . = ALIGN (0x4)
                 0x30000000                _ssram_d2 = .
  *(.sram_d2)
  *(.sram_d2*)
                 0x30000000                . = ALIGN (0x4)
                 0x30000000                _esram_d2 = .
-                0x080037bc                _sisram_d3 = LOADADDR (.sram_d3)
+                0x08003c1c                _sisram_d3 = LOADADDR (.sram_d3)
 
-.sram_d3        0x38000000        0x0 load address 0x080037bc
+.sram_d3        0x38000000        0x0 load address 0x08003c1c
                 0x38000000                . = ALIGN (0x4)
                 0x38000000                _ssram_d3 = .
  *(.sram_d3)
@@ -3594,7 +3588,7 @@ LOAD c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/
                 0x38000000                _esram_d3 = .
                 0x38000000                . = ALIGN (0x4)
 
-.bss            0x20000400     0x1b48
+.bss            0x20000400     0x24d4
                 0x20000400                _sbss = .
                 0x20000400                __bss_start__ = _sbss
  *(.bss)
@@ -3767,24 +3761,36 @@ LOAD c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/
                 0x20001800      0x298 CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
                 0x20001800                VectorTbl_RAM
  .bss.uwTick    0x20001a98        0x4 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .bss.ArrayMutex
+                0x20001a9c       0x18 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .bss.ArraySem  0x20001ab4       0x10 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
  .bss.StartupTaskStk
-                0x20001a9c      0x400 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+                0x20001ac4      0x400 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
  .bss.StartupTaskTCB
-                0x20001e9c       0xac CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+                0x20001ec4       0xac CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .bss.TaskAStk  0x20001f70      0x400 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .bss.TaskATCB  0x20002370       0xac CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .bss.TaskBStk  0x2000241c      0x400 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .bss.TaskBTCB  0x2000281c       0xac CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .bss.au8_sem_array
+                0x200028c8        0x2 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ *fill*         0x200028ca        0x2 
+ .bss.au8_shared_array
+                0x200028cc        0x8 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
  *(COMMON)
-                0x20001f48                . = ALIGN (0x4)
-                0x20001f48                _ebss = .
-                0x20001f48                __bss_end__ = _ebss
+                0x200028d4                . = ALIGN (0x4)
+                0x200028d4                _ebss = .
+                0x200028d4                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20001f48      0x800
-                0x20001f48                . = ALIGN (0x4)
+                0x200028d4      0x800
+                0x200028d4                . = ALIGN (0x4)
                 [!provide]                PROVIDE (end = .)
                 [!provide]                PROVIDE (_end = .)
-                0x20001f48                . = (. + _Min_Heap_Size)
-                0x20002748                . = (. + _Min_Stack_Size)
- *fill*         0x20001f48      0x800 
-                0x20002748                . = ALIGN (0x4)
+                0x200028d4                . = (. + _Min_Heap_Size)
+                0x200030d4                . = (. + _Min_Stack_Size)
+ *fill*         0x200028d4      0x800 
+                0x200030d4                . = ALIGN (0x4)
 
 .memory_b1_text
  *(.mb1text)
@@ -3829,49 +3835,51 @@ LOAD c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/
  .ARM.attributes
                 0x0000023d       0x32 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_prio.c.obj
  .ARM.attributes
-                0x0000026f       0x32 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
+                0x0000026f       0x32 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
  .ARM.attributes
-                0x000002a1       0x32 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+                0x000002a1       0x32 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
  .ARM.attributes
-                0x000002d3       0x32 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
+                0x000002d3       0x32 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
  .ARM.attributes
-                0x00000305       0x32 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
+                0x00000305       0x32 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
  .ARM.attributes
-                0x00000337       0x32 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
+                0x00000337       0x32 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
  .ARM.attributes
-                0x00000369       0x32 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_var.c.obj
+                0x00000369       0x32 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
  .ARM.attributes
-                0x0000039b       0x32 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+                0x0000039b       0x32 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_var.c.obj
  .ARM.attributes
-                0x000003cd       0x32 CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
+                0x000003cd       0x32 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
  .ARM.attributes
-                0x000003ff       0x32 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+                0x000003ff       0x32 CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
  .ARM.attributes
-                0x00000431       0x32 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+                0x00000431       0x32 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
  .ARM.attributes
-                0x00000463       0x32 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
+                0x00000463       0x32 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
  .ARM.attributes
-                0x00000495       0x32 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
+                0x00000495       0x32 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
  .ARM.attributes
-                0x000004c7       0x32 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
+                0x000004c7       0x32 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
  .ARM.attributes
-                0x000004f9       0x32 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+                0x000004f9       0x32 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
  .ARM.attributes
-                0x0000052b       0x32 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x0000052b       0x32 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
  .ARM.attributes
-                0x0000055d       0x32 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+                0x0000055d       0x32 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
  .ARM.attributes
-                0x0000058f       0x32 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+                0x0000058f       0x32 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
  .ARM.attributes
-                0x000005c1       0x32 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+                0x000005c1       0x32 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
  .ARM.attributes
-                0x000005f3       0x32 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+                0x000005f3       0x32 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
  .ARM.attributes
-                0x00000625       0x32 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
+                0x00000625       0x32 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
  .ARM.attributes
-                0x00000657       0x32 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtend.o
+                0x00000657       0x32 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
  .ARM.attributes
-                0x00000689       0x1e c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtn.o
+                0x00000689       0x32 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtend.o
+ .ARM.attributes
+                0x000006bb       0x1e c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtn.o
 OUTPUT(BLINKY.elf elf32-littlearm)
 LOAD linker stubs
 LOAD c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard\libc.a
@@ -3890,6 +3898,7 @@ LOAD c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/
  .comment       0x00000057       0x58 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_msg.c.obj
  .comment       0x00000057       0x58 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
  .comment       0x00000057       0x58 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_prio.c.obj
+ .comment       0x00000057       0x58 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
  .comment       0x00000057       0x58 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
  .comment       0x00000057       0x58 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
  .comment       0x00000057       0x58 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
@@ -3912,7 +3921,7 @@ LOAD c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/
  .comment       0x00000057       0x58 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
  .comment       0x00000057       0x58 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard/crtend.o
 
-.debug_info     0x00000000    0x17325
+.debug_info     0x00000000    0x189fd
  .debug_info    0x00000000      0x10b c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard\libc.a(lib_a-init.o)
  .debug_info    0x0000010b       0x23 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/GCC/startup_stm32h743xx.s.obj
  .debug_info    0x0000012e       0x25 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_a.s.obj
@@ -3925,28 +3934,29 @@ LOAD c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/
  .debug_info    0x000042cb      0x89d CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_msg.c.obj
  .debug_info    0x00004b68     0x1472 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
  .debug_info    0x00005fda      0x217 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_prio.c.obj
- .debug_info    0x000061f1      0xed1 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
- .debug_info    0x000070c2     0x20c8 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
- .debug_info    0x0000918a      0xf8a CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
- .debug_info    0x0000a114     0x1016 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
- .debug_info    0x0000b12a     0x13bc CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
- .debug_info    0x0000c4e6      0x9a0 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_var.c.obj
- .debug_info    0x0000ce86      0x9b0 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
- .debug_info    0x0000d836      0x606 CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
- .debug_info    0x0000de3c      0x999 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
- .debug_info    0x0000e7d5      0x8fc CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_info    0x0000f0d1      0x226 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
- .debug_info    0x0000f2f7      0x697 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
- .debug_info    0x0000f98e      0x252 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
- .debug_info    0x0000fbe0      0xc12 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
- .debug_info    0x000107f2     0x1553 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
- .debug_info    0x00011d45     0x13b3 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
- .debug_info    0x000130f8     0x1230 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
- .debug_info    0x00014328     0x19a1 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
- .debug_info    0x00015cc9      0xf2a CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
- .debug_info    0x00016bf3      0x732 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
+ .debug_info    0x000061f1     0x114f CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
+ .debug_info    0x00007340      0xed1 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
+ .debug_info    0x00008211     0x20c8 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+ .debug_info    0x0000a2d9      0xf8a CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
+ .debug_info    0x0000b263     0x1016 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
+ .debug_info    0x0000c279     0x13bc CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
+ .debug_info    0x0000d635      0x9a0 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_var.c.obj
+ .debug_info    0x0000dfd5      0x9b0 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+ .debug_info    0x0000e985      0x606 CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
+ .debug_info    0x0000ef8b      0x999 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+ .debug_info    0x0000f924      0x8fc CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_info    0x00010220      0x226 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
+ .debug_info    0x00010446      0x697 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
+ .debug_info    0x00010add      0x252 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
+ .debug_info    0x00010d2f      0xc12 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .debug_info    0x00011941     0x1553 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .debug_info    0x00012e94     0x13b3 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+ .debug_info    0x00014247     0x1230 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+ .debug_info    0x00015477     0x19a1 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+ .debug_info    0x00016e18     0x14b3 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .debug_info    0x000182cb      0x732 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
 
-.debug_abbrev   0x00000000     0x3b84
+.debug_abbrev   0x00000000     0x3e82
  .debug_abbrev  0x00000000       0xc9 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard\libc.a(lib_a-init.o)
  .debug_abbrev  0x000000c9       0x12 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/GCC/startup_stm32h743xx.s.obj
  .debug_abbrev  0x000000db       0x14 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_a.s.obj
@@ -3959,29 +3969,30 @@ LOAD c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/
  .debug_abbrev  0x00000a51      0x1d8 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_msg.c.obj
  .debug_abbrev  0x00000c29      0x27f CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
  .debug_abbrev  0x00000ea8      0x133 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_prio.c.obj
- .debug_abbrev  0x00000fdb      0x248 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
- .debug_abbrev  0x00001223      0x2ba CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
- .debug_abbrev  0x000014dd      0x28b CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
- .debug_abbrev  0x00001768      0x250 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
- .debug_abbrev  0x000019b8      0x283 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
- .debug_abbrev  0x00001c3b       0xcf CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_var.c.obj
- .debug_abbrev  0x00001d0a      0x298 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
- .debug_abbrev  0x00001fa2      0x140 CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
- .debug_abbrev  0x000020e2      0x18e CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
- .debug_abbrev  0x00002270      0x27b CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_abbrev  0x000024eb      0x146 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
- .debug_abbrev  0x00002631      0x1b2 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
- .debug_abbrev  0x000027e3      0x17f CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
- .debug_abbrev  0x00002962      0x246 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
- .debug_abbrev  0x00002ba8      0x2da CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
- .debug_abbrev  0x00002e82      0x2fd CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
- .debug_abbrev  0x0000317f      0x37e CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
- .debug_abbrev  0x000034fd      0x30b CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
- .debug_abbrev  0x00003808      0x1e8 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
- .debug_abbrev  0x000039f0      0x194 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
+ .debug_abbrev  0x00000fdb      0x281 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
+ .debug_abbrev  0x0000125c      0x248 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
+ .debug_abbrev  0x000014a4      0x2ba CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+ .debug_abbrev  0x0000175e      0x28b CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
+ .debug_abbrev  0x000019e9      0x250 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
+ .debug_abbrev  0x00001c39      0x283 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
+ .debug_abbrev  0x00001ebc       0xcf CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_var.c.obj
+ .debug_abbrev  0x00001f8b      0x298 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+ .debug_abbrev  0x00002223      0x140 CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
+ .debug_abbrev  0x00002363      0x18e CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+ .debug_abbrev  0x000024f1      0x27b CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_abbrev  0x0000276c      0x146 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
+ .debug_abbrev  0x000028b2      0x1b2 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
+ .debug_abbrev  0x00002a64      0x17f CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
+ .debug_abbrev  0x00002be3      0x246 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .debug_abbrev  0x00002e29      0x2da CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .debug_abbrev  0x00003103      0x2fd CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+ .debug_abbrev  0x00003400      0x37e CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+ .debug_abbrev  0x0000377e      0x30b CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+ .debug_abbrev  0x00003a89      0x265 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .debug_abbrev  0x00003cee      0x194 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
 
 .debug_loclists
-                0x00000000     0x77fc
+                0x00000000     0x7df0
  .debug_loclists
                 0x00000000       0x7a c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard\libc.a(lib_a-init.o)
  .debug_loclists
@@ -3999,43 +4010,45 @@ LOAD c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/
  .debug_loclists
                 0x000029ed       0xe1 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_prio.c.obj
  .debug_loclists
-                0x00002ace      0x142 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
+                0x00002ace      0x5c4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
  .debug_loclists
-                0x00002c10     0x124d CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+                0x00003092      0x142 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
  .debug_loclists
-                0x00003e5d      0x318 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
+                0x000031d4     0x124d CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
  .debug_loclists
-                0x00004175      0x4cf CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
+                0x00004421      0x318 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
  .debug_loclists
-                0x00004644      0x5f9 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
+                0x00004739      0x4cf CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
  .debug_loclists
-                0x00004c3d      0x39f CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+                0x00004c08      0x5f9 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
  .debug_loclists
-                0x00004fdc       0xa4 CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
+                0x00005201      0x39f CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
  .debug_loclists
-                0x00005080      0x1d3 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+                0x000055a0       0xa4 CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
  .debug_loclists
-                0x00005253       0xa8 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+                0x00005644      0x1d3 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
  .debug_loclists
-                0x000052fb       0x5b CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
+                0x00005817       0xa8 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
  .debug_loclists
-                0x00005356       0x53 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
+                0x000058bf       0x5b CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
  .debug_loclists
-                0x000053a9      0x328 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+                0x0000591a       0x53 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
  .debug_loclists
-                0x000056d1      0x28c CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x0000596d      0x328 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
  .debug_loclists
-                0x0000595d      0x718 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+                0x00005c95      0x28c CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
  .debug_loclists
-                0x00006075      0x4ba CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+                0x00005f21      0x718 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
  .debug_loclists
-                0x0000652f     0x1274 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+                0x00006639      0x4ba CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
  .debug_loclists
-                0x000077a3       0x23 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+                0x00006af3     0x1274 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
  .debug_loclists
-                0x000077c6       0x36 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
+                0x00007d67       0x53 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .debug_loclists
+                0x00007dba       0x36 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
 
-.debug_aranges  0x00000000      0xc80
+.debug_aranges  0x00000000      0xce0
  .debug_aranges
                 0x00000000       0x20 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard\libc.a(lib_a-init.o)
  .debug_aranges
@@ -4061,48 +4074,50 @@ LOAD c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/
  .debug_aranges
                 0x000003d8       0x38 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_prio.c.obj
  .debug_aranges
-                0x00000410       0x38 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
+                0x00000410       0x50 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
  .debug_aranges
-                0x00000448       0xc8 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+                0x00000460       0x38 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
  .debug_aranges
-                0x00000510       0x50 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
+                0x00000498       0xc8 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
  .debug_aranges
-                0x00000560       0x48 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
+                0x00000560       0x50 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
  .debug_aranges
-                0x000005a8       0x80 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
+                0x000005b0       0x48 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
  .debug_aranges
-                0x00000628       0x18 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_var.c.obj
+                0x000005f8       0x80 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
  .debug_aranges
-                0x00000640       0x78 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+                0x00000678       0x18 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_var.c.obj
  .debug_aranges
-                0x000006b8       0x40 CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
+                0x00000690       0x78 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
  .debug_aranges
-                0x000006f8       0x28 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+                0x00000708       0x40 CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
  .debug_aranges
-                0x00000720       0x40 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+                0x00000748       0x28 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
  .debug_aranges
-                0x00000760       0x30 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
+                0x00000770       0x40 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
  .debug_aranges
-                0x00000790       0x38 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
+                0x000007b0       0x30 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
  .debug_aranges
-                0x000007c8       0x38 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
+                0x000007e0       0x38 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
  .debug_aranges
-                0x00000800       0x58 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+                0x00000818       0x38 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
  .debug_aranges
-                0x00000858      0x1a0 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x00000850       0x58 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
  .debug_aranges
-                0x000009f8       0x80 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+                0x000008a8      0x1a0 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
  .debug_aranges
-                0x00000a78       0xa0 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+                0x00000a48       0x80 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
  .debug_aranges
-                0x00000b18       0xe0 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+                0x00000ac8       0xa0 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
  .debug_aranges
-                0x00000bf8       0x28 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+                0x00000b68       0xe0 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
  .debug_aranges
-                0x00000c20       0x60 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
+                0x00000c48       0x38 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .debug_aranges
+                0x00000c80       0x60 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
 
 .debug_rnglists
-                0x00000000      0x900
+                0x00000000      0x949
  .debug_rnglists
                 0x00000000       0x13 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard\libc.a(lib_a-init.o)
  .debug_rnglists
@@ -4124,45 +4139,47 @@ LOAD c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/
  .debug_rnglists
                 0x00000293       0x25 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_prio.c.obj
  .debug_rnglists
-                0x000002b8       0x28 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
+                0x000002b8       0x3b CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
  .debug_rnglists
-                0x000002e0       0x9f CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+                0x000002f3       0x28 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
  .debug_rnglists
-                0x0000037f       0x3a CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
+                0x0000031b       0x9f CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
  .debug_rnglists
-                0x000003b9       0x34 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
+                0x000003ba       0x3a CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
  .debug_rnglists
-                0x000003ed       0x62 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
+                0x000003f4       0x34 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
  .debug_rnglists
-                0x0000044f       0x56 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+                0x00000428       0x62 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
  .debug_rnglists
-                0x000004a5       0x2b CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
+                0x0000048a       0x56 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
  .debug_rnglists
-                0x000004d0       0x1a CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+                0x000004e0       0x2b CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
  .debug_rnglists
-                0x000004ea       0x2c CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+                0x0000050b       0x1a CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
  .debug_rnglists
-                0x00000516       0x1f CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
+                0x00000525       0x2c CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
  .debug_rnglists
-                0x00000535       0x25 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
+                0x00000551       0x1f CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
  .debug_rnglists
-                0x0000055a       0x25 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
+                0x00000570       0x25 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
  .debug_rnglists
-                0x0000057f       0x3f CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+                0x00000595       0x25 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
  .debug_rnglists
-                0x000005be      0x135 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x000005ba       0x3f CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
  .debug_rnglists
-                0x000006f3       0x60 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+                0x000005f9      0x135 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
  .debug_rnglists
-                0x00000753       0xa3 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+                0x0000072e       0x60 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
  .debug_rnglists
-                0x000007f6       0xad CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+                0x0000078e       0xa3 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
  .debug_rnglists
-                0x000008a3       0x1a CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+                0x00000831       0xad CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
  .debug_rnglists
-                0x000008bd       0x43 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
+                0x000008de       0x28 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .debug_rnglists
+                0x00000906       0x43 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
 
-.debug_line     0x00000000    0x135de
+.debug_line     0x00000000    0x1411c
  .debug_line    0x00000000      0x17e c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard\libc.a(lib_a-init.o)
  .debug_line    0x0000017e       0x78 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/GCC/startup_stm32h743xx.s.obj
  .debug_line    0x000001f6       0xb0 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_a.s.obj
@@ -4175,28 +4192,29 @@ LOAD c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/
  .debug_line    0x0000332e      0x735 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_msg.c.obj
  .debug_line    0x00003a63      0xc94 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
  .debug_line    0x000046f7      0x4a9 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_prio.c.obj
- .debug_line    0x00004ba0      0x65d CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
- .debug_line    0x000051fd     0x1a91 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
- .debug_line    0x00006c8e      0x99e CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
- .debug_line    0x0000762c      0x7c4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
- .debug_line    0x00007df0      0xdff CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
- .debug_line    0x00008bef      0x3aa CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_var.c.obj
- .debug_line    0x00008f99      0x7ba CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
- .debug_line    0x00009753      0x574 CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
- .debug_line    0x00009cc7      0x58b CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
- .debug_line    0x0000a252      0xb06 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_line    0x0000ad58      0x325 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
- .debug_line    0x0000b07d      0x9f6 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
- .debug_line    0x0000ba73      0xb76 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
- .debug_line    0x0000c5e9      0xcca CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
- .debug_line    0x0000d2b3      0xe72 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
- .debug_line    0x0000e125     0x1639 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
- .debug_line    0x0000f75e      0xd25 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
- .debug_line    0x00010483     0x205f CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
- .debug_line    0x000124e2      0xbee CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
- .debug_line    0x000130d0      0x50e CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
+ .debug_line    0x00004ba0      0xa93 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
+ .debug_line    0x00005633      0x65d CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
+ .debug_line    0x00005c90     0x1a91 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+ .debug_line    0x00007721      0x99e CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
+ .debug_line    0x000080bf      0x7c4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
+ .debug_line    0x00008883      0xdff CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
+ .debug_line    0x00009682      0x3aa CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_var.c.obj
+ .debug_line    0x00009a2c      0x7ba CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+ .debug_line    0x0000a1e6      0x574 CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
+ .debug_line    0x0000a75a      0x58b CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+ .debug_line    0x0000ace5      0xb06 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_line    0x0000b7eb      0x325 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
+ .debug_line    0x0000bb10      0x9f6 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
+ .debug_line    0x0000c506      0xb76 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
+ .debug_line    0x0000d07c      0xcca CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .debug_line    0x0000dd46      0xe72 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .debug_line    0x0000ebb8     0x1639 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+ .debug_line    0x000101f1      0xd25 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+ .debug_line    0x00010f16     0x205f CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+ .debug_line    0x00012f75      0xc99 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .debug_line    0x00013c0e      0x50e CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
 
-.debug_str      0x00000000   0x14afb2
+.debug_str      0x00000000   0x14b155
  .debug_str     0x00000000      0x1d3 c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard\libc.a(lib_a-init.o)
                                 0x275 (size before relaxing)
  .debug_str     0x000001d3       0x78 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/GCC/startup_stm32h743xx.s.obj
@@ -4220,48 +4238,50 @@ LOAD c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/
                                0xb0d0 (size before relaxing)
  .debug_str     0x000115b4       0x8d CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_prio.c.obj
                                0x9e92 (size before relaxing)
- .debug_str     0x00011641      0x175 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
+ .debug_str     0x00011641       0xd3 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
+                               0xaff5 (size before relaxing)
+ .debug_str     0x00011714      0x175 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
                                0xb0d0 (size before relaxing)
- .debug_str     0x000117b6      0x221 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+ .debug_str     0x00011889      0x221 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
                                0xb33f (size before relaxing)
- .debug_str     0x000119d7      0x111 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
+ .debug_str     0x00011aaa      0x111 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
                                0xb0d7 (size before relaxing)
- .debug_str     0x00011ae8      0x130 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
+ .debug_str     0x00011bbb      0x130 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
                                0xb0d0 (size before relaxing)
- .debug_str     0x00011c18      0x1bc CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
+ .debug_str     0x00011ceb      0x1bc CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
                                0xb188 (size before relaxing)
- .debug_str     0x00011dd4       0x88 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_var.c.obj
+ .debug_str     0x00011ea7       0x88 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_var.c.obj
                                0xa541 (size before relaxing)
- .debug_str     0x00011e5c      0x1a0 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+ .debug_str     0x00011f2f      0x1a0 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
                                0xa503 (size before relaxing)
- .debug_str     0x00011ffc      0xaad CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
+ .debug_str     0x000120cf      0xaad CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
                                0xa88f (size before relaxing)
- .debug_str     0x00012aa9    0xd8c40 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+ .debug_str     0x00012b7c    0xd8c40 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
                               0xdbc5f (size before relaxing)
- .debug_str     0x000eb6e9    0x5cbc9 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_str     0x000eb7bc    0x5cbc9 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
                              0x13ca09 (size before relaxing)
- .debug_str     0x001482b2      0x224 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
+ .debug_str     0x00148385      0x224 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
                                0x75dd (size before relaxing)
- .debug_str     0x001484d6      0x26e CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
+ .debug_str     0x001485a9      0x26e CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
                              0x13c8c1 (size before relaxing)
- .debug_str     0x00148744       0xcc CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
+ .debug_str     0x00148817       0xcc CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
                              0x13f2fa (size before relaxing)
- .debug_str     0x00148810      0x388 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .debug_str     0x001488e3      0x388 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
                              0x1388fb (size before relaxing)
- .debug_str     0x00148b98      0xfd8 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .debug_str     0x00148c6b      0xfd8 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
                              0x139704 (size before relaxing)
- .debug_str     0x00149b70      0x363 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+ .debug_str     0x00149c43      0x363 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
                              0x138b5e (size before relaxing)
- .debug_str     0x00149ed3      0x387 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+ .debug_str     0x00149fa6      0x387 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
                              0x1390e5 (size before relaxing)
- .debug_str     0x0014a25a      0x922 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+ .debug_str     0x0014a32d      0x922 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
                              0x138efa (size before relaxing)
- .debug_str     0x0014ab7c      0x31c CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
-                             0x142e62 (size before relaxing)
- .debug_str     0x0014ae98      0x11a CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
+ .debug_str     0x0014ac4f      0x3ec CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+                             0x142fab (size before relaxing)
+ .debug_str     0x0014b03b      0x11a CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
                                0xa391 (size before relaxing)
 
-.debug_frame    0x00000000     0x1d28
+.debug_frame    0x00000000     0x1e44
  .debug_frame   0x00000000       0x2c c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/v7e-m+dp/hard\libc.a(lib_a-init.o)
  .debug_frame   0x0000002c      0x184 CMakeFiles/BLINKY.dir/Micrium/Software/uC-CPU/cpu_core.c.obj
  .debug_frame   0x000001b0      0x294 CMakeFiles/BLINKY.dir/Micrium/Software/uC-LIB/lib_mem.c.obj
@@ -4271,25 +4291,26 @@ LOAD c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/
  .debug_frame   0x00000750       0xa4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_msg.c.obj
  .debug_frame   0x000007f4      0x13c CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
  .debug_frame   0x00000930       0x58 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_prio.c.obj
- .debug_frame   0x00000988       0x94 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
- .debug_frame   0x00000a1c      0x2c4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
- .debug_frame   0x00000ce0       0xe4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
- .debug_frame   0x00000dc4       0xc8 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
- .debug_frame   0x00000e8c      0x180 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
- .debug_frame   0x0000100c      0x124 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
- .debug_frame   0x00001130       0x78 CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
- .debug_frame   0x000011a8       0x3c CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
- .debug_frame   0x000011e4       0x78 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_frame   0x0000125c       0x54 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
- .debug_frame   0x000012b0       0x64 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
- .debug_frame   0x00001314       0x5c CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
- .debug_frame   0x00001370       0xd8 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
- .debug_frame   0x00001448      0x37c CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
- .debug_frame   0x000017c4      0x12c CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
- .debug_frame   0x000018f0      0x138 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
- .debug_frame   0x00001a28      0x210 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
- .debug_frame   0x00001c38       0x40 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
- .debug_frame   0x00001c78       0xb0 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
+ .debug_frame   0x00000988       0xec CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
+ .debug_frame   0x00000a74       0x94 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
+ .debug_frame   0x00000b08      0x2c4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+ .debug_frame   0x00000dcc       0xe4 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
+ .debug_frame   0x00000eb0       0xc8 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
+ .debug_frame   0x00000f78      0x180 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
+ .debug_frame   0x000010f8      0x124 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+ .debug_frame   0x0000121c       0x78 CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
+ .debug_frame   0x00001294       0x3c CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+ .debug_frame   0x000012d0       0x78 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_frame   0x00001348       0x54 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
+ .debug_frame   0x0000139c       0x64 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
+ .debug_frame   0x00001400       0x5c CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
+ .debug_frame   0x0000145c       0xd8 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .debug_frame   0x00001534      0x37c CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .debug_frame   0x000018b0      0x12c CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+ .debug_frame   0x000019dc      0x138 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+ .debug_frame   0x00001b14      0x210 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+ .debug_frame   0x00001d24       0x70 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .debug_frame   0x00001d94       0xb0 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
 
 .debug_line_str
                 0x00000000      0x17f
@@ -4303,7 +4324,7 @@ LOAD c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/
                 0x0000010b       0x74 CMakeFiles/BLINKY.dir/Micrium/Software/uC-CPU/ARM-Cortex-M4/GNU/cpu_a.s.obj
                                  0xf8 (size before relaxing)
 
-.debug_macro    0x00000000    0x35338
+.debug_macro    0x00000000    0x353d5
  .debug_macro   0x00000000       0x6d CMakeFiles/BLINKY.dir/Micrium/Software/uC-CPU/cpu_core.c.obj
  .debug_macro   0x0000006d      0xac0 CMakeFiles/BLINKY.dir/Micrium/Software/uC-CPU/cpu_core.c.obj
  .debug_macro   0x00000b2d       0x10 CMakeFiles/BLINKY.dir/Micrium/Software/uC-CPU/cpu_core.c.obj
@@ -4331,95 +4352,96 @@ LOAD c:/progra~2/armgnu~1/112202~1.02/bin/../lib/gcc/arm-none-eabi/11.2.1/thumb/
  .debug_macro   0x00002875       0x8b CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_msg.c.obj
  .debug_macro   0x00002900       0x8b CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_mutex.c.obj
  .debug_macro   0x0000298b       0x8b CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_prio.c.obj
- .debug_macro   0x00002a16       0x8b CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
- .debug_macro   0x00002aa1       0x8b CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
- .debug_macro   0x00002b2c       0x8b CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
- .debug_macro   0x00002bb7       0x8b CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
- .debug_macro   0x00002c42       0x8b CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
- .debug_macro   0x00002ccd       0x91 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_var.c.obj
- .debug_macro   0x00002d5e      0x2f5 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_var.c.obj
- .debug_macro   0x00003053       0x97 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
- .debug_macro   0x000030ea       0x2f CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
- .debug_macro   0x00003119       0x8e CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
- .debug_macro   0x000031a7       0x22 CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
- .debug_macro   0x000031c9       0xcb CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
- .debug_macro   0x00003294       0x2e CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
- .debug_macro   0x000032c2       0x3b CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
- .debug_macro   0x000032fd       0x22 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
- .debug_macro   0x0000331f       0x8e CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
- .debug_macro   0x000033ad       0x51 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
- .debug_macro   0x000033fe      0x103 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
- .debug_macro   0x00003501       0x6a CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
- .debug_macro   0x0000356b      0x1df CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
- .debug_macro   0x0000374a       0x22 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
- .debug_macro   0x0000376c       0xaf CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
- .debug_macro   0x0000381b     0x128e CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
- .debug_macro   0x00004aa9    0x243b2 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
- .debug_macro   0x00028e5b       0x43 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
- .debug_macro   0x00028e9e      0x335 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x000291d3       0x10 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x000291e3      0x5ec CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x000297cf       0xc2 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x00029891     0x3631 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002cec2       0x5e CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002cf20       0x1d CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002cf3d       0x35 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002cf72       0x34 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002cfa6       0x16 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002cfbc       0x97 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d053      0x341 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d394       0xfd CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d491       0x10 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d4a1       0x16 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d4b7       0x43 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d4fa       0x34 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d52e       0x10 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d53e       0x52 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d590      0x182 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d712       0x10 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d722       0x1c CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d73e       0x52 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d790       0x22 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d7b2       0x10 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d7c2       0x52 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d814       0xd5 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d8e9       0x1c CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d905       0x3d CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d942       0x16 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002d958      0x16f CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002dac7       0x57 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002db1e     0x18d8 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0002f3f6      0xf30 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x00030326      0x12a CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x00030450      0x11e CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0003056e      0x34f CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x000308bd       0x27 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x000308e4      0x71f CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x00031003      0x23a CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x0003123d       0x74 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x000312b1      0x241 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x000314f2      0x432 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x00031924      0x5dd CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x00031f01      0x3a7 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x000322a8      0x359 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x00032601       0x51 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x00032652      0x163 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x000327b5      0x265 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x00032a1a       0x35 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x00032a4f      0x5ac CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x00032ffb       0x9e CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x00033099      0x51a CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
- .debug_macro   0x000335b3       0x89 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
- .debug_macro   0x0003363c      0x35f CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
- .debug_macro   0x0003399b      0x382 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
- .debug_macro   0x00033d1d      0x339 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
- .debug_macro   0x00034056      0x324 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
- .debug_macro   0x0003437a      0x31e CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
- .debug_macro   0x00034698      0x2fa CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
- .debug_macro   0x00034992      0x30c CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
- .debug_macro   0x00034c9e      0x3ce CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
- .debug_macro   0x0003506c      0x1ae CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
- .debug_macro   0x0003521a       0x10 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
- .debug_macro   0x0003522a       0x4c CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
- .debug_macro   0x00035276       0x2e CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
- .debug_macro   0x000352a4       0x94 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj
+ .debug_macro   0x00002a16       0x8b CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_sem.c.obj
+ .debug_macro   0x00002aa1       0x8b CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_stat.c.obj
+ .debug_macro   0x00002b2c       0x8b CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_task.c.obj
+ .debug_macro   0x00002bb7       0x8b CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tick.c.obj
+ .debug_macro   0x00002c42       0x8b CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_time.c.obj
+ .debug_macro   0x00002ccd       0x8b CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_tmr.c.obj
+ .debug_macro   0x00002d58       0x91 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_var.c.obj
+ .debug_macro   0x00002de9      0x2f5 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Source/os_var.c.obj
+ .debug_macro   0x000030de       0x97 CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+ .debug_macro   0x00003175       0x2f CMakeFiles/BLINKY.dir/Micrium/Software/uCOS-III/Ports/ARM-Cortex-M/ARMv7-M/GNU/os_cpu_c.c.obj
+ .debug_macro   0x000031a4       0x8e CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
+ .debug_macro   0x00003232       0x22 CMakeFiles/BLINKY.dir/ST/BSP/Interrupts/bsp_int_armv7m.c.obj
+ .debug_macro   0x00003254       0xcb CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+ .debug_macro   0x0000331f       0x2e CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+ .debug_macro   0x0000334d       0x3b CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+ .debug_macro   0x00003388       0x22 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+ .debug_macro   0x000033aa       0x8e CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+ .debug_macro   0x00003438       0x51 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+ .debug_macro   0x00003489      0x103 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+ .debug_macro   0x0000358c       0x6a CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+ .debug_macro   0x000035f6      0x1df CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+ .debug_macro   0x000037d5       0x22 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+ .debug_macro   0x000037f7       0xaf CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+ .debug_macro   0x000038a6     0x128e CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+ .debug_macro   0x00004b34    0x243b2 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+ .debug_macro   0x00028ee6       0x43 CMakeFiles/BLINKY.dir/ST/BSP/Startup/STM32H7xx/system_stm32h7xx.c.obj
+ .debug_macro   0x00028f29      0x335 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002925e       0x10 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002926e      0x5ec CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002985a       0xc2 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002991c     0x3631 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002cf4d       0x5e CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002cfab       0x1d CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002cfc8       0x35 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002cffd       0x34 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d031       0x16 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d047       0x97 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d0de      0x341 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d41f       0xfd CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d51c       0x10 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d52c       0x16 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d542       0x43 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d585       0x34 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d5b9       0x10 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d5c9       0x52 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d61b      0x182 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d79d       0x10 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d7ad       0x1c CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d7c9       0x52 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d81b       0x22 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d83d       0x10 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d84d       0x52 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d89f       0xd5 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d974       0x1c CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d990       0x3d CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d9cd       0x16 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002d9e3      0x16f CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002db52       0x57 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002dba9     0x18d8 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0002f481      0xf30 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x000303b1      0x12a CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x000304db      0x11e CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x000305f9      0x34f CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x00030948       0x27 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0003096f      0x71f CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0003108e      0x23a CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x000312c8       0x74 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0003133c      0x241 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0003157d      0x432 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x000319af      0x5dd CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x00031f8c      0x3a7 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x00032333      0x359 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0003268c       0x51 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x000326dd      0x163 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x00032840      0x265 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x00032aa5       0x35 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x00032ada      0x5ac CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x00033086       0x9e CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x00033124      0x51a CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_clk.c.obj
+ .debug_macro   0x0003363e       0x89 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_cpu.c.obj
+ .debug_macro   0x000336c7      0x35f CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_led.c.obj
+ .debug_macro   0x00033a26      0x382 CMakeFiles/BLINKY.dir/ST/BSP/STM32H743ZI_Nucleo/bsp_os.c.obj
+ .debug_macro   0x00033da8      0x339 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .debug_macro   0x000340e1      0x324 CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .debug_macro   0x00034405      0x31e CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+ .debug_macro   0x00034723      0x2fa CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+ .debug_macro   0x00034a1d      0x30c CMakeFiles/BLINKY.dir/ST/BSP/SDK/STM32CubeH7/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+ .debug_macro   0x00034d29      0x3ce CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .debug_macro   0x000350f7      0x1ae CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .debug_macro   0x000352a5       0x10 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .debug_macro   0x000352b5       0x4c CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .debug_macro   0x00035301       0x40 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/main.c.obj
+ .debug_macro   0x00035341       0x94 CMakeFiles/BLINKY.dir/ST/STM32H743ZI_Nucleo/Blinky/OS3/os_app_hooks.c.obj

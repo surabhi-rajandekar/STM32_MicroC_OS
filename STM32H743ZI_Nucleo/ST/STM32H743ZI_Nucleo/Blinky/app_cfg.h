@@ -57,6 +57,8 @@
 #define  OS_TASK_TMR_PRIO                (OS_LOWEST_PRIO - 2u)  /* Only required for uC/OS-II                           */
 
 #define  APP_CFG_STARTUP_TASK_PRIO                         3u
+#define  APP_CFG_TASKA_TASK_PRIO                           3u
+#define  APP_CFG_TASKB_TASK_PRIO                           5u
 
 
 /*
@@ -67,7 +69,7 @@
 */
 
 #define  APP_CFG_STARTUP_TASK_STK_SIZE                   256u
-
+#define  APP_CFG_DEFAULT_TASK_STK_SIZE                     256u
 
 /*
 *********************************************************************************************************
@@ -75,7 +77,7 @@
 *********************************************************************************************************
 */
 
-#define  APP_TRACE_LEVEL                   TRACE_LEVEL_OFF
+#define  APP_TRACE_LEVEL                   TRACE_LEVEL_DBG
 #define  APP_TRACE                         printf
 
 #define  APP_TRACE_INFO(x)    ((APP_TRACE_LEVEL >= TRACE_LEVEL_INFO)  ? (void)(APP_TRACE x) : (void)0)
