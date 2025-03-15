@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "stm32h7xx_hal.h": "c",
+        "bsp_led.h": "c",
+        "os_app_hooks.h": "c",
+        "lib_mem.h": "c",
+        "os.h": "c"
+    },
+    "cortex-debug.variableUseNaturalFormat": false
+}

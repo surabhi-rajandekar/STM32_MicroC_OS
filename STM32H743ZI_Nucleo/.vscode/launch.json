@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug STM32",
+        "type": "cortex-debug",
+        "request": "launch",
+        "servertype": "stlink",
+        "device": "STM32H743ZI",
+        "cwd": "${workspaceFolder}",
+        "executable": "C:/Users/srajandekar/Personal_Projects/STM32_MicroC_OS/STM32H743ZI_Nucleo/build/Debug/BLINKY.elf",
+        "armToolchainPath": "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/11.2 2022.02/bin",
+        //"serverpath": "C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.stlink-gdb-server.win32_2.1.100.202310302101/tools/bin", // Path to your st-util executable
+        "runToEntryPoint": "true",
+        //"svdFile": "${workspaceFolder}/path/to/your/STM32F7.svd" // Path to the SVD file for your STM32 device
+      }
+    ]
+  }

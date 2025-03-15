@@ -1,0 +1,3 @@
+[submodule "infra/uC-OS3"]
+	path = infra/uC-OS3
+	url = https://github.com/weston-embedded/uC-OS3
